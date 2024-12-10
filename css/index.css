@@ -1,0 +1,193 @@
+#loader
+{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-color: var(--primary);
+}
+
+#loader span
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--gray);
+}
+
+#loader div{
+    height: 5px;
+    background-color: var(--gray);
+    opacity: 0;
+    animation: load .01s;
+}
+
+@keyframes load {
+    0%{
+        opacity: 1;
+    }
+    10%{
+        width: 20%;
+    }
+    50%{
+        width: 80%;
+    }
+    90%{
+        width: 90%;
+        opacity: 1;
+    }
+    100%{
+        width: 100%;
+        opacity: 0;
+    }
+}
+
+#add
+{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#add h2{
+    color: var(--gray);
+}
+
+#add .container{
+    height: 300px;
+    width: 500px;
+    padding: 2.5%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary);
+}
+
+#add .container textarea{
+    outline: none;
+    border: none;
+    resize: none;
+    height: 40%;
+    width: 100%;
+    background: transparent;
+    color: var(--white);
+    padding: 5%;
+}
+
+main header
+{
+    /* height: 100vh; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* border-bottom: 2px solid var(--border); */
+    /* background-color: red; */
+}
+
+main header .container{
+    height: auto;
+    width: 90%;
+    /* margin-top: 5%; */
+    /* margin-left: 5%; */
+    /* font-size: 30px; */
+    padding: 5%;
+    /* background-color: blue; */
+}
+
+main header .container h1{
+    font-size: 50px;
+    color: var(--gray);
+}
+
+main header .container p{
+    color: var(--white);
+}
+
+main header .gallery{
+    min-height: 220px;
+    width: 90%;
+    padding: 0% 5%;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    /* margin-top: 5%; */
+    /* margin-left: 5%; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* align-content: center; */
+    justify-content: space-between;
+    /* justify-content: space-evenly; */
+    /* background-color: aqua; */
+}
+
+main header .gallery div{
+    height: 200px;
+    width: 200px;
+    /* background: var(--secondary); */
+    color: var(--gray);
+    /* background-position: center !important;
+    background-size: cover !important; */
+    /* background-blend-mode: darken !important; */
+    /* filter: brightness(80%); */
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 80px;
+}
+
+/* main .gallery div:nth-child(1){
+    background: url(../media/code.jpg);
+}
+
+main .gallery div:nth-child(2){
+    background: url(../media/guitar.jpg);
+}
+
+main .gallery div:nth-child(3){
+    background: url(../media/chess.jpg);
+} */
+
+main .about{
+    width: 90%;
+    /* margin-top: 5%; */
+    /* margin-left: 5%; */
+    padding: 5%;
+    text-align: center;
+    /* background-color: var(--secondary); */
+}
+
+main .about h2{
+    font-size: 35px;
+    color: var(--gray);
+}
+
+main .about p{
+    text-align: start;
+    color: var(--white);
+}
+
+main footer
+{
+    width: 90%;
+    padding: 2.5% 5%;
+    border-top: 1px solid var(--border);
+    /* background: var(--secondary); */
+    color: var(--white);
+}

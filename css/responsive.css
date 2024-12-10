@@ -1,0 +1,51 @@
+@media screen and (max-width: 500px) {
+    body{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        /* background-color: red; */
+    }
+
+    nav{
+        height: 80px;
+        width: 100%;
+        flex-direction: row;
+        /* background-color: blue; */
+    }
+
+    nav > div{
+        height: 65px;
+        width: auto;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav .nLinks{
+        justify-content: space-between;
+    }
+
+    nav .link{
+        width: 50px;
+    }
+    
+    nav .nLinks .link{
+        margin: 0 10px;
+        /* background-color: green !important; */
+    }
+
+    main{
+        height: calc(100vh - 80px);
+        width: 100%;
+    }
+
+    main footer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    main header .gallery{
+        justify-content: center !important;
+    }   
+}

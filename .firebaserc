@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "jit-esh"
+  },
+  "targets": {
+    "jit-esh": {
+      "hosting": {
+        "app": [
+          "jitesh"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
